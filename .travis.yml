@@ -16,7 +16,7 @@ after_success:
 
     - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
 
-    - docker push -t yakaman/multi-client
-    - docker push -t yakaman/multi-nginx
-    - docker push -t yakaman/multi-server
-    - docker push -t yakaman/multi-worker
+    - docker push yakaman/multi-client
+    - docker push yakaman/multi-nginx
+    - docker push yakaman/multi-server
+    - docker push yakaman/multi-worker
